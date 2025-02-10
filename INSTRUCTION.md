@@ -6,4 +6,4 @@ Testing the ToDo application using port-forward:
 Testing the ToDo application using the busyboxplus:curl container:
 1. You need to get the IP of the ToDo app using the following command: kubectl get pods -n todoapp -o wide
 2. Connect to the busybox pod: kubectl -n todoapp exec -it busybox-pod -- sh
-3. Inside the shell: curl 10.1.0.36:8080
+3. Inside the shell: curl todoapp-pod_IP:8080
